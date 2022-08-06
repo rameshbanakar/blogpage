@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+.social-media ul{
+    list-style: none;
+   
+
+}
+.social-media ul li{
+    display: inline-block;
+    padding:10px;
+}
+.social-media{
+   
+    float: right;
+    margin:auto;
+    margin-right: 20px;
+}
+.bi-facebook{
+    background-color: white;
+    border-radius: 50%;
+    color:blue;
+    opacity: .7;
+}
+.bi-instagram{
+    background-color:rgb(240, 30, 30);
+    border-radius: 5px;
+    color: white;
+    opacity: .7;
+}
+.bi-youtube{
+    color:red;
+    opacity: .7;
+}
+
+.bi-instagram:hover{
+    opacity:1;
+
+}
+.bi-facebook:hover{opacity: 1;}
+.bi-youtube:hover{opacity: 1;}
+.bi-twitter{
+    color:blue;
+    opacity: .7;
+}
+.bi-twitter:hover{opacity: 1;}
+.btn-succes{
+    background-color: blue;
+    border:2px black solid;
+    opacity: .7;
+}
+.btn-succes{
+    
+    opacity:1;
+}
+.act:hover{
+     color:black;
+}
+.compname{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color:white
+
+}

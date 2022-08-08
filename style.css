@@ -59,3 +59,24 @@
     color:white
 
 }
+.bi-person-circle{
+    color: black;
+}
+.bi-person-circle:hover{
+    color:white;
+}
+.container-box{
+    width:30%;
+    border:2px black solid;
+    padding:5px;
+    margin:auto;
+    margin-top:120px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(200, 173, 234);
+    box-shadow: 5px 5px 10px black;
+}
+body{
+    background-color: antiquewhite;
+    margin-top:120px;
+}

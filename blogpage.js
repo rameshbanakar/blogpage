@@ -4,18 +4,17 @@ function notify(){
 }
 document.getElementById("blogme").onclick=notify;
 
-//log in validation fuction
-function loginvalid(){
+//log in form validation 
+function valid(){
     if(document.myform.username.value==""){
-        alert("please provide User Name")
+        alert("Please provide the User name")
         document.myform.username.focus()
         return false
     }
     else if(document.myform.password.value==""){
-        alert("please enter the password")
+        alert("Please provide password")
         document.myform.password.focus()
         return false
-
     }
     else{return true}
 }

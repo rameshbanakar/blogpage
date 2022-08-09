@@ -1,82 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
-.social-media ul{
+ul{
     list-style: none;
-   
-
-}
-.social-media ul li{
-    display: inline-block;
-    padding:10px;
-}
-.social-media{
-   
-    float: right;
-    margin:auto;
-    margin-right: 20px;
-}
-.bi-facebook{
-    background-color: white;
-    border-radius: 50%;
-    color:blue;
-    opacity: .7;
-}
-.bi-instagram{
-    background-color:rgb(240, 30, 30);
-    border-radius: 5px;
-    color: white;
-    opacity: .7;
-}
-.bi-youtube{
-    color:red;
-    opacity: .7;
-}
-
-.bi-instagram:hover{
-    opacity:1;
-
-}
-.bi-facebook:hover{opacity: 1;}
-.bi-youtube:hover{opacity: 1;}
-.bi-twitter{
-    color:blue;
-    opacity: .7;
-}
-.bi-twitter:hover{opacity: 1;}
-.btn-succes{
-    background-color: blue;
-    border:2px black solid;
-    opacity: .7;
-}
-.btn-succes{
     
-    opacity:1;
 }
-.act:hover{
-     color:black;
-}
-.compname{
-    font-family: 'Oleo Script Swash Caps', cursive;
-    color:white
-
-}
-.bi-person-circle{
-    color: black;
-}
-.bi-person-circle:hover{
+ul li a{
+    font-size: 20px;
     color:white;
 }
-.container-box{
-    width:30%;
-    border:2px black solid;
-    padding:5px;
-    margin:auto;
-    margin-top:120px;
+ul li:hover{
+    list-style: circle;
+
+}
+.slide{
+    position: relative;
+
+    border:2px solid black;
     border-radius: 10px;
-    text-align: center;
-    background-color: rgb(200, 173, 234);
+    margin: 10px auto;
+    overflow: hidden;
     box-shadow: 5px 5px 10px black;
 }
 body{
-    background-color: antiquewhite;
-    margin-top:120px;
+   background-color: linen;
+}
+.body-container{
+    width:90%;
+    margin:10px auto;
+    /*border: 2px red solid;*/
+    
+    overflow: auto;
+}
+.body1{
+    width:50%;
+    min-height: 50px;
+   
+    float: left;
+    overflow: auto;
+    padding:15px;
+}
+
+.body2{
+    width:50%;
+    min-height: 50px;
+   
+    float: right;
+    overflow: auto;
+    padding:15px;
+}
+.body0{
+    width:100%;
+    min-height: 50px;
+    
+    text-align: center;
+    padding:10px;
+}
+.social-meadia ul li{
+    display: inline-block;
+    padding-left:10px;
+    padding-right:10px;
+}
+.log-in-form{
+    width:40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    position:relative;
+    border: 2px solid black;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(157, 241, 241);
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+    
+}
+
+
+.footer-close{
+    background-color:black;
+    width:90%;
+    height: 40px;
+    margin: auto;
+    color:white;
 }

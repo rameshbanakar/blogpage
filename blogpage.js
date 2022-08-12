@@ -1,8 +1,3 @@
-function notify(){
-    var message="This is Blog page here you can write and post your Blog";
-    alert(message);
-}
-document.getElementById("blogme").onclick=notify;
 
 //log in form validation 
 function valid(){
@@ -16,5 +11,34 @@ function valid(){
         document.myform.password.focus()
         return false
     }
-    else{return true}
+    else{
+        document.getElementById("welcome").innerHTML="Welcome"+document.getElementById("username").value;
+        return true}
 }
+//blog page notification
+function onpage(){
+    window.alert("You are alredy in the Blog page");
+}
+
+function posting(){
+    let blog_body=document.getElementById("blog_body");
+    let sectag=document.createElement("section");
+    let imgtag=document.createElement("img");
+    let headingtag=document.createElement("h2");
+    let paragraph=document.createElement("p")
+   //adding inner content to the tags
+    paragraph.innerHTML=document.getElementById("exampleFormControlTextarea4").value;
+    headingtag.innerHTML=document.getElementById("heading").value;
+    imgtag.src=document.getElementById("images").value;
+
+    //adding class to the tags
+
+    sectag.classList.add("section");
+ 
+    // ading to document
+    sectag.appendChild(imgtag);
+    sectag.appendChild(headingtag);
+    sectag.appendChild(paragraph);
+    blog_body.appendChild(sectag);
+}
+

@@ -17,7 +17,7 @@
           <h2  style="color:white;">Company Name</h2>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" onclick="onpage()">Blog</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="login.html">Log In</a></li>
@@ -30,6 +30,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="social-meadia">
+          <h5 id="welcome"></h5>
           <ul>
             <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -50,7 +51,29 @@
         </div>
       </nav>
     </div>
+    <div class="blog-container">
+        <h1>Welcome to Blog post!</h1>
+        
+      <div class="blog-body-container" id="blog_body">
+       
+        <section class="section" id="blog-section">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h2>Good Day</h2>
+          <p><b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+        </section>
+        </div>
+        <h4 style="text-align:center">Create your Blog here</h4>
+         <div class="add-blog">
+           
+            <label for="heading">Add heading:</label><input type="text" name="heading" placeholder="Add heading" id="heading"><br><br>
+            <label for="images">Add Images:</label><input type="text" name="images" id="images" placeholder=" google image url"><br><br>
+            <label for="text-area">Write your blog here:</label><br>
+            <textarea  name="text-area" class="form-control" id="exampleFormControlTextarea4" rows="4" id="message"></textarea><br>
+            <button type="submit" class="btn btn-success" onclick="posting()">Post</button>
+         </div>
+    </div>
     <script src="blogpage.js"></script>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

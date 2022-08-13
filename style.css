@@ -102,6 +102,9 @@ body{
     box-shadow: 5px 5px 10px black;
     border-radius: 5px;
 }
+.section:hover{
+    box-shadow: 5px 5px 5px rgb(3, 248, 81);
+}
 .section img{
     float:left;
     width:300px;

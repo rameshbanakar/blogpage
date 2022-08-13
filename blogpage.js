@@ -40,5 +40,17 @@ function posting(){
     sectag.appendChild(headingtag);
     sectag.appendChild(paragraph);
     blog_body.appendChild(sectag);
+    document.getElementById("add-blog").style.display="none";
+}
+
+function createblog(){
+    document.getElementById("exampleFormControlTextarea4").value="";
+    document.getElementById("heading").value="";
+    document.getElementById("images").value="";
+
+    document.getElementById("add-blog").style.display="block";
+}
+function cancelblog(){
+    document.getElementById("add-blog").style.display="none";
 }
 

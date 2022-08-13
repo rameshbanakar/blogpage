@@ -99,6 +99,8 @@ body{
     overflow: auto;
     padding:5px;
     margin-bottom: 10px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
 }
 .section img{
     float:left;
@@ -114,8 +116,16 @@ body{
     overflow: auto;
     padding:10px;
     border-radius: 10px;
-    background-color:darkseagreen
+    background-color:darkseagreen;
+    display: none;
 }
 textarea{
     width:90%;
+}
+.btncont{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.postbtn{
+    float: right;
 }

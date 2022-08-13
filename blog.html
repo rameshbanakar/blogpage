@@ -62,14 +62,15 @@
           <p><b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
         </section>
         </div>
-        <h4 style="text-align:center">Create your Blog here</h4>
-         <div class="add-blog">
+        <div class="btncont"><button type="button" class="btn btn-success" onclick="createblog()">Post Blog</button></div>
+         <div class="add-blog" id="add-blog">
            
             <label for="heading">Add heading:</label><input type="text" name="heading" placeholder="Add heading" id="heading"><br><br>
             <label for="images">Add Images:</label><input type="text" name="images" id="images" placeholder=" google image url"><br><br>
             <label for="text-area">Write your blog here:</label><br>
             <textarea  name="text-area" class="form-control" id="exampleFormControlTextarea4" rows="4" id="message"></textarea><br>
-            <button type="submit" class="btn btn-success" onclick="posting()">Post</button>
+            <button type="submit" class="btn btn-success postbtn" onclick="posting()">Post</button>
+            <button type="button" class="btn btn-danger" onclick="cancelblog()">Cancel</button>
          </div>
     </div>
     <script src="blogpage.js"></script>
